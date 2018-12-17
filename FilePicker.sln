@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderPicker", "FolderPicker\FolderPicker.csproj", "{B98F6224-7FA4-40E9-9B15-37B0C4BCE996}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Droid", "FolderPicker\App.Droid.csproj", "{B98F6224-7FA4-40E9-9B15-37B0C4BCE996}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
