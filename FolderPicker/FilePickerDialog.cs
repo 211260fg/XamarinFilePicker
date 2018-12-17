@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -554,4 +553,13 @@ namespace FolderPicker
         }
     }
 
+    internal static class WeakReferenceExtensions
+    {
+        public static T TryGetTarget<T>(this WeakReference<T> weakReference) where T : class
+        {
+            T result = null;
+            weakReference?.TryGetTarget(out result);
+            return result;
+        }
+    }
 }

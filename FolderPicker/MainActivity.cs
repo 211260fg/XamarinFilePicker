@@ -11,8 +11,6 @@ using Android.Support.V4.Content;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
-using Java.IO;
-using AlertDialog = Android.App.AlertDialog;
 
 namespace FolderPicker
 {
@@ -22,7 +20,6 @@ namespace FolderPicker
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
             var folderBtn = FindViewById<Button>(Resource.Id.btn_folder);
@@ -45,7 +42,7 @@ namespace FolderPicker
             SelectFile();
         }
 
-        private async void SelectFile()
+        private void SelectFile()
         {
             if (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) != Permission.Granted)
             {
